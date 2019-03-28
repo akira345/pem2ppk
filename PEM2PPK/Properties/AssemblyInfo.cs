@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // アセンブリに関連付けられている情報を変更するには、
 // これらの属性値を変更してください。
 [assembly: AssemblyTitle("PEM2PPK")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("PEM形式のファイルをPPK形式に変換します。")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("PEM2PPK")]
