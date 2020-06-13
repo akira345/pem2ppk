@@ -1,0 +1,21 @@
+version: 1.0.{build}
+branches:
+  only:
+  - master
+skip_tags: true
+configuration: Release
+platform: Any CPU
+before_build:
+- cmd: nuget restore
+build:
+  project: PEM2PPK.sln
+  verbosity: minimal
+artifacts:
+- path: PEM2PPK\bin\Release
+  name: pem2ppk_stable
+deploy:
+- provider: GitHub
+  tag: PEM2PPK-v$(appveyor_build_version)
+  release: PEM2PPK-v$(appveyor_build_version)
+  auth_token:
+    secure: C6qp4NUrPAueR6AAoNUkFivJvn9kJ3xACtbUumYqUllBXlmVxNZBeWuwO1eU0bnO
