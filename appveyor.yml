@@ -12,7 +12,7 @@ build:
   project: PEM2PPK.sln
   verbosity: minimal
 artifacts:
-- path: PEM2PPK\x64\bin\Release
+- path: PEM2PPK\bin\x64\Release
   name: pem2ppk_stable
 deploy:
 - provider: GitHub
