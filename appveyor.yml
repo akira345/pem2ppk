@@ -18,5 +18,4 @@ deploy:
 - provider: GitHub
   tag: PEM2PPK-v$(appveyor_build_version)
   release: PEM2PPK-v$(appveyor_build_version)
-  auth_token:
-    secure: C6qp4NUrPAueR6AAoNUkFivJvn9kJ3xACtbUumYqUllBXlmVxNZBeWuwO1eU0bnO
+  auth_token: $(github_access)
